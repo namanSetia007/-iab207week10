@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Name Naman Setia -->
+    <!-- Student ID: n11882778 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Gaming Tournament</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><b>Gaming Tournaments</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+        </a>
+
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="{{ url_for('main.home') }}">Home</a>
+
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('main.createEvent') }}">Create Tournament</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('main.history') }}">History</a>
+                </li>
+                
+            </ul>
+            
+            <button class="btn btn-outline-primary">Login</button>
+          </div>
+        </div>
+    </nav>
+
+
+<main><img src="{{ url_for('static', filename='img/detailsimg.jpg') }}" class="img-fluid" alt="..."></main>
+
+<br>
+<section class="container">
+    <h1 class="text-center"> Join Tournament</h1><br>
+    <div class="container">
+        <div class="row d-flex flexContainer">
+            <div class="fullWidth col-4">
+                <img class="img-fluid" src="static/img/valomob.jpg" alt="">
+            </div>
+            <div class="fullWidth col-8">
+                <h2 class="mt-5">Valorant</h2>
+                <p><span id="gameStatus">online</span></p>
+                <h1>$50</h1>
+                
+                <div class="row">
+                    <div class="col-sm">
+                        <p>Tickets</p>
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="floatingInput" placeholder="Enter a Number Here">
+                            <label for="floatingInput">Tickets Book</label>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <p>Spots Available</p>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" disabled id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">15</label>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary w-100 "> Join Now</button>
+                    
+                <br>
+                <br>
+                <div class="card">
+                    <div class="card-body">
+                        <p>Gaming Tournaments encourages community involvement by letting players
+                            interact through comments under the post. Players can track if they are participating in
+                            tournament and all the details about the contest. This creates a place where all type of gamers
+                            has a chance to show their skills to shine between other rivals</p>
+                    </div>
+                </div>
+                
+                <p></p>
+                    <br><br>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="text-center">Comments</h1><br>
+        <div class="fullWidth card mx-auto ">
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Add New Comment</label>
+                    <textarea placeholder="Enter Here" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+        <br>
+        <div class="card mx-auto">
+            <div class="card-body">
+                <h4>John Doe</h4>
+                <p>Gaming Tournaments encourages community involvement by letting players
+                    has a chance to show their skills to shine between other rivals</p>
+            </div>
+        </div>
+        <br>
+        <div class="card mx-auto">
+            <div class="card-body">
+                <h4>Harry Potter</h4>
+                <p>Gaming Tournaments encourages community involvement by letting players
+                    has a chance to show their skills to shine between other rivals</p>
+            </div>
+        </div>
+        <br>
+        <div class="card mx-auto">
+            <div class="card-body">
+                <h4>Jean Grey</h4>
+                <p>Gaming Tournaments encourages community involvement by letting players
+                    has a chance to show their skills to shine between other rivals</p>
+            </div>
+        </div>
+        <br>
+        <div class="card mx-auto">
+            <div class="card-body">
+                <h4>Tony Stark</h4>
+                <p>Gaming Tournaments encourages community involvement by letting players
+                    has a chance to show their skills to shine between other rivals</p>
+            </div>
+        </div>
+        <br>
+        <div class="card mx-auto">
+            <div class="card-body">
+                <h4>Bruce Banner</h4>
+                <p>Gaming Tournaments encourages community involvement by letting players
+                    has a chance to show their skills to shine between other rivals</p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<br>    
+<footer class="text-bg-dark p-3" >
+    <p class="text-center">&copy Gaming Tournaments Naman Setia @2024</p>
+</footer>
+</body>
+</html>

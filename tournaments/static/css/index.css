@@ -1,0 +1,23 @@
+/* Name Naman Setia */
+/* Student ID: n11882778  */
+    
+
+
+#gameStatus{
+    background-color: lightgreen;
+    color: darkgreen;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+
+@media (max-width: 992px) {
+    .flexContainer {
+        flex-direction: column;
+    }
+    .fullWidth{
+        width: 100%;
+    }
+}
+
